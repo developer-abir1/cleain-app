@@ -21,7 +21,7 @@ export default function Review() {
       >
         {['1 ', '2', '3', '5', '8', '8s'].map((x) => (
           <SwiperSlide>
-            <div className=" ">
+            <div className=" " key={x}>
               <div>
                 <img
                   className="w-24 h-24  mt-5   rounded-full mx-auto"
