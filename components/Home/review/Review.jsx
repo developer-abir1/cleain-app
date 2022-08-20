@@ -19,9 +19,9 @@ export default function Review() {
         modules={[FreeMode, Pagination]}
         className="mySwiper "
       >
-        {['1 ', '2', '3', '5', '8', '8s'].map((x) => (
+        {['1 ', '2', '3', '5', '8', '8s'].map((x, index) => (
           <SwiperSlide>
-            <div className=" " key={x}>
+            <div className=" " key={index}>
               <div>
                 <img
                   className="w-24 h-24  mt-5   rounded-full mx-auto"
@@ -36,7 +36,7 @@ export default function Review() {
                   <blockquote>
                     <p className="text-lg font-medium">
                       “Tailwind CSS is the only framework that I've seen scale
-                      on large teams. It’s easy to customize, adapts to any
+                      on large teams. Its easy to customize, adapts to any
                       design, and the build size is tiny.”
                     </p>
                   </blockquote>
