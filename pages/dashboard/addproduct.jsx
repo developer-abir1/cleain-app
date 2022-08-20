@@ -2,7 +2,7 @@ import React from 'react';
 import DasboardPath from '../../components/DasboardPath';
 import { useForm } from 'react-hook-form';
 
-export default function addproduct() {
+export default function Addproduct() {
   const { register, handleSubmit, watch } = useForm();
   const onSubmit = (data) => console.log(data);
 
