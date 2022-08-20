@@ -3,12 +3,7 @@ import DasboardPath from '../../components/DasboardPath';
 import { useForm } from 'react-hook-form';
 
 export default function addproduct() {
-  const {
-    register,
-    handleSubmit,
-    watch,
-    formState: { errors },
-  } = useForm();
+  const { register, handleSubmit, watch } = useForm();
   const onSubmit = (data) => console.log(data);
 
   console.log(watch('example')); // watch input value by passing the name of it
