@@ -24,7 +24,7 @@ export default function Products() {
         ]
           .slice(0, 8)
           .map((x, index) => (
-            <div className="card w-96 bg-base-100 shadow-xl">
+            <div className="card w-96 bg-base-100 shadow-xl" key={index}>
               <figure>
                 <img
                   src="https://placeimg.com/400/225/arch"

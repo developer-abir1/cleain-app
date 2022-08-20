@@ -36,8 +36,8 @@ export default function Package() {
 
               <div>
                 <ul>
-                  {['lorem', 'torem', 'horem', 'gorme'].map((x) => (
-                    <li className="  text-sm py-2 flex">
+                  {['lorem', 'torem', 'horem', 'gorme'].map((x, index) => (
+                    <li className="  text-sm py-2 flex" key={index}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-5 w-5 text-green-400 mr-4"
