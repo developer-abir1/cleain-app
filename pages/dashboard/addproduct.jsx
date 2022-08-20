@@ -1,14 +1,19 @@
 import React from 'react';
 import DasboardPath from '../../components/DasboardPath';
-export default function addproduct() {
-  // const { register, handleSubmit, watch } = useForm();
-  // const onSubmit = (data) => console.log(data);
+import { useForm } from 'react-hook-form';
 
-  // console.log(watch('example')); // watch input value by passing the name of it
+export default function addproduct() {
+  const { register, handleSubmit, watch } = useForm();
+  const onSubmit = (data) => console.log(data);
+
+  console.log(watch('example')); // watch input value by passing the name of it
   return (
     <DasboardPath text={'Add Products'}>
       <div className="flex justify-center items-center">
-        <form className="bg-gray-400  w-10/12 mt-10 p-4">
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="bg-gray-400  w-10/12 mt-10 p-4"
+        >
           <div className=" grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="mb-4">
               <label className="label">
